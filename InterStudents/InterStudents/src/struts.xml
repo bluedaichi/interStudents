@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.devMode" value="true" />
+	<package name="com.internousdev.InterStudents.action" extends="struts-default">
+
+		<!-- AdminAction -->
+		<action name="AdminAction"
+			class="com.internousdev.InterStudents.action.AdminAction" method="execute">
+			<result name="success">admin.jsp</result>
+		</action>
+
+		<!-- GoHomeAction -->
+		<action name="GoHomeAction"
+			class="com.internousdev.InterStudents.action.GoHomeAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+		<!-- GoTeamAddAction -->
+		<action name="GoTeamAddAction"
+			class="com.internousdev.InterStudents.action.GoTeamAddAction" method="execute">
+			<result name="success">teamAdd.jsp</result>
+		</action>
+
+		<!-- HomeAction -->
+		<action name="HomeAction" class="com.internousdev.InterStudents.action.HomeAction"
+			method="execute">
+			<result name="login">login.jsp</result>
+			<result name="success">studentsList.jsp</result>
+		</action>
+
+		<!-- LoginAction -->
+		<action name="LoginAction"
+			class="com.internousdev.InterStudents.action.LoginAction" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">login.jsp</result>
+
+		</action>
+
+		<!-- LogoutAction -->
+		<action name="LogoutAction"
+			class="com.internousdev.InterStudents.action.LogoutAction" method="execute">
+			<result name="success">index.jsp</result>
+		</action>
+
+		<!-- MypageAction -->
+		<action name="MyPageAction"
+			class="com.internousdev.InterStudents.action.MyPageAction" method="execute">
+			<result name="success">myPage.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+				<!-- NewsEditAction -->
+		<action name="NewsEditAction"
+			class="com.internousdev.InterStudents.action.NewsEditAction" method="execute">
+			<result name="success">newsEdit.jsp</result>
+		</action>
+
+		<!-- NewsContributeAction -->
+		<action name="NewsContributeAction"
+			class="com.internousdev.InterStudents.action.NewsContributeAction"
+			method="execute">
+			<result name="success">complete.jsp</result>
+		</action>
+
+		<!-- NewsUpdateAction -->
+		<action name="NewsUpdateAction"
+			class="com.internousdev.InterStudents.action.NewsUpdateAction"
+			method="execute">
+			<result name="success">complete.jsp</result>
+		</action>
+
+		<!-- NewsDeleteAction -->
+		<action name="NewsDeleteAction"
+			class="com.internousdev.InterStudents.action.NewsDeleteAction"
+			method="execute">
+			<result name="success">complete.jsp</result>
+		</action>
+
+		<!-- NewsDetailsAction -->
+		<action name="NewsDetailsAction"
+			class="com.internousdev.InterStudents.action.NewsDetailsAction"
+			method="execute">
+			<result name="success">newsDetails.jsp</result>
+		</action>
+
+		<!-- ProfileAction -->
+		<action name="ProfileAction"
+			class="com.internousdev.InterStudents.action.ProfileAction" method="execute">
+			<result name="success">profile.jsp</result>
+		</action>
+
+		<!-- ProfileUpdateAction -->
+		<action name="ProfileUpdateAction"
+			class="com.internousdev.InterStudents.action.ProfileUpdateAction"
+			method="execute">
+			<result name="success">profileUpdate.jsp</result>
+		</action>
+
+		<!-- ProfileUpdateConfirmAction -->
+		<action name="ProfileUpdateConfirmAction"
+			class="com.internousdev.InterStudents.action.ProfileUpdateConfirmAction"
+			method="execute">
+			<result name="success">profileUpdateConfirm.jsp</result>
+			<result name="error">profileUpdate.jsp</result>
+		</action>
+
+		<!-- ProfileUpdateCompleteAction -->
+		<action name="ProfileUpdateCompleteAction"
+			class="com.internousdev.InterStudents.action.ProfileUpdateCompleteAction"
+			method="execute">
+			<result name="success">profileUpdateComplete.jsp</result>
+		</action>
+
+		<!-- StudyCreateAction -->
+		<action name="StudyCreateAction"
+			class="com.internousdev.InterStudents.action.StudyCreateAction"
+			method="execute">
+			<result name="success">studyCreate.jsp</result>
+		</action>
+
+		<!-- StudyCreateCompleteAction -->
+		<action name="StudyCreateCompleteAction"
+			class="com.internousdev.InterStudents.action.StudyCreateCompleteAction"
+			method="execute">
+			<result name="success">studyCreateComplete.jsp</result>
+		</action>
+
+		<!-- StudentsListAction -->
+		<action name="StudentsListAction"
+			class="com.internousdev.InterStudents.action.StudentsListAction"
+			method="execute">
+			<result name="success">studentsList.jsp</result>
+		</action>
+
+				<!-- StudentsListForGeneralAction -->
+		<action name="StudentsListForGeneralAction"
+			class="com.internousdev.InterStudents.action.StudentsListForGeneralAction"
+			method="execute">
+			<result name="success">studentsListForGeneral.jsp</result>
+		</action>
+
+		<!-- StudentsDeleteAction -->
+		<action name="StudentsDeleteAction"
+			class="com.internousdev.InterStudents.action.StudentsDeleteAction"
+			method="execute">
+			<result name="success">toStudentsList.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- StudentsSetTeamAction -->
+		<action name="StudentsSetTeamAction"
+			class="com.internousdev.InterStudents.action.StudentsSetTeamAction"
+			method="execute">
+			<result name="success">toStudentsList.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- TeamAddAction -->
+		<action name="TeamAddAction"
+			class="com.internousdev.InterStudents.action.TeamAddAction" method="execute">
+			<result name="success">toAdmin.jsp</result>
+		</action>
+
+		<!-- TeamDeleteAction -->
+		<action name="TeamDeleteAction"
+			class="com.internousdev.InterStudents.action.TeamDeleteAction"
+			method="execute">
+			<result name="success">toAdmin.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- TeamHomeAction -->
+		<action name="TeamHomeAction"
+			class="com.internousdev.InterStudents.action.TeamHomeAction" method="execute">
+			<result name="success">teamHome.jsp</result>
+		</action>
+
+		<!-- TeamBoardContributeAction -->
+		<action name="TeamBoardContributeAction"
+			class="com.internousdev.InterStudents.action.TeamBoardContributeAction"
+			method="execute">
+			<result name="success">teamBoardContribute.jsp</result>
+		</action>
+
+		<!-- TeamBoardContributeCompleteAction -->
+		<action name="TeamBoardContributeCompleteAction"
+			class="com.internousdev.InterStudents.action.TeamBoardContributeCompleteAction"
+			method="execute">
+			<result name="success">teamComplete.jsp</result>
+		</action>
+
+		<!-- TeamBoardUpdateAction -->
+		<action name="TeamBoardUpdateAction"
+			class="com.internousdev.InterStudents.action.TeamBoardUpdateAction"
+			method="execute">
+			<result name="success">teamComplete.jsp</result>
+		</action>
+
+		<!-- TeamBoardDeleteAction -->
+		<action name="TeamBoardDeleteAction"
+			class="com.internousdev.InterStudents.action.TeamBoardDeleteAction"
+			method="execute">
+			<result name="success">teamComplete.jsp</result>
+			<result name="error">teamHome.jsp</result>
+		</action>
+
+		<!-- TeamBoardEditAction -->
+		<action name="TeamBoardEditAction"
+			class="com.internousdev.InterStudents.action.TeamBoardEditAction"
+			method="execute">
+			<result name="success">teamBoardEdit.jsp</result>
+		</action>
+
+		<!-- TeamNewsEditAction -->
+		<action name="TeamNewsEditAction"
+			class="com.internousdev.InterStudents.action.TeamNewsEditAction"
+			method="execute">
+			<result name="success">teamNewsEdit.jsp</result>
+		</action>
+
+		<!-- TeamNewsContributeAction -->
+		<action name="TeamNewsContributeAction"
+			class="com.internousdev.InterStudents.action.TeamNewsContributeAction"
+			method="execute">
+			<result name="success">teamComplete.jsp</result>
+		</action>
+
+		<!-- TeamNewsUpdateAction -->
+		<action name="TeamNewsUpdateAction"
+			class="com.internousdev.InterStudents.action.TeamNewsUpdateAction"
+			method="execute">
+			<result name="success">teamComplete.jsp</result>
+		</action>
+
+		<!-- TeamNewsDeleteAction -->
+		<action name="TeamNewsDeleteAction"
+			class="com.internousdev.InterStudents.action.TeamNewsDeleteAction"
+			method="execute">
+			<result name="success">teamComplete.jsp</result>
+		</action>
+
+		<!-- UserCreateAction -->
+		<action name="UserCreateAction"
+			class="com.internousdev.InterStudents.action.UserCreateAction"
+			method="execute">
+			<result name="success">userCreate.jsp</result>
+		</action>
+
+		<!-- UserCreateConfirmAction -->
+		<action name="UserCreateConfirmAction"
+			class="com.internousdev.InterStudents.action.UserCreateConfirmAction"
+			method="execute">
+			<result name="success">userCreateConfirm.jsp</result>
+			<result name="error">userCreate.jsp</result>
+		</action>
+
+		<!-- UserCreateCompleteAction -->
+		<action name="UserCreateCompleteAction"
+			class="com.internousdev.InterStudents.action.UserCreateCompleteAction"
+			method="execute">
+			<result name="success">userCreateComplete.jsp</result>
+		</action>
+
+	</package>
+</struts>

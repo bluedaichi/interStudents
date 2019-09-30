@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.info {
+	width: 60%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
+	text-align: center;
+	border: 1px solid #ffff00;
+	background-color: #0066CC;
+	font-size: 90%;
+	color: #ffff00;
+}
+
+.error {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 15px;
+	border: 1px solid red;
+	background-color: #FFB6C1;
+	font-size: 80%;
+}
+
+.error-message {
+	text-align: center;
+	color: red;
+}

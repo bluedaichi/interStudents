@@ -1,0 +1,16 @@
+ @charset "UTF-8";
+
+table.seat{
+  border-collapse:separate;
+  border-spacing: 5px;
+  width: 100%;
+}
+
+table.seat td{
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #e4d4bc;
+  border:solid 1px #af9d85;
+
+}
